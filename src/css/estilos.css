@@ -7,5 +7,79 @@ body {
 
 .cabecalho {
     background-color: red;
-    display: flex; 
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+     color: white;
+}
+
+.cartao {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+}
+
+.lista-personagens {
+    background-color: blue;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.cartao .nome {
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px; 
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nivel-carta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .image-carta {
+    max-width: 260px;
+    align-self: center; 
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: black;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: #a67c52;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.cartao .informacoes .informacoes-ataque {
+    background-color: chartreuse; 
 }
