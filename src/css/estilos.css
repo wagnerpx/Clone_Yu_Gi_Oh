@@ -81,5 +81,42 @@ body {
 }
 
 .cartao .informacoes .informacoes-ataque {
-    background-color: chartreuse; 
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px; 
+}
+
+.fundo-1 {
+    background: url(../images/fundo-1.jpg);
+}
+.fundo-2 {
+    background: url(../images/fundo-2.jpg);
+}
+.fundo-3 {
+    background: url(../images/fundo-3.jpg);
+}
+.fundo-4 {
+    background: url(../images/fundo-4.jpg);
+}
+.fundo-5 {
+    background: url(../images/fundo-5.jpg);
+}
+.fundo-6 {
+    background: url(../images/fundo-6.jpg);
+}
+.fundo-7 {
+    background: url(../images/fundo-7.jpg);
 }
