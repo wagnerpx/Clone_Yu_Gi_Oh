@@ -1,0 +1,11 @@
+body {
+    font-family: 'Yugioh', sans-serif;
+    background-image: url(../images/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho {
+    background-color: red;
+    display: flex; 
+}
