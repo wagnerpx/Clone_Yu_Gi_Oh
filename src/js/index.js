@@ -17,9 +17,30 @@ anterior da lista
 
 // - passo 1 - dar um jeito de pegar o elemento HTML da seta avançar
 const btnAvancar = document.getElementById("btn-avancar");
+const btnVoltar = document.getElementById("btn-voltar");
+const cartoes = document.querySelectorAll(".cartao");
+let cartaoAtual = 0;
 
-// - passo 2 - dar um jeito de identificar o clique do usuário na seta avançar
 btnAvancar.addEventListener("click", function () {
-    // - passo 3 - fazer aparecer o próximo cartão da lista
+    if(cartaoAtual === cartoes.length -1) return;
+    console.log(cartoes.length);
+    
+    const cartaoSelecionado = document.querySelector(".selecionado");
+    cartaoSelecionado.classList.remove("selecionado");
+
+    cartaoAtual++;
+    cartoes[cartaoAtual].classList.add("selecionado");
+    
+});
+
+
+btnVoltar.addEventListener("click", function () {
+    if(cartaoAtual === 0 ) return;
+    
+    const cartaoSelecionado = document.querySelector(".selecionado");
+    cartaoSelecionado.classList.remove("selecionado");
+
+    cartaoAtual--;
+    cartoes[cartaoAtual].classList.add("selecionado");
     
 });
