@@ -182,7 +182,7 @@ body::-webkit-scrollbar-track {
 
 .carta-virada.mostrar-fundo-carta {
 	display: block;
-	background: url(/src/imagens/fundo-carta.jpg) center no-repeat;
+	background: url(../imagens/fundo-carta.jpg) center no-repeat;
 	background-size: cover;
 	border-radius: 10px;
 	width: 100%;
