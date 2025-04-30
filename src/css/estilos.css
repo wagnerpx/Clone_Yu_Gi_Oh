@@ -26,6 +26,7 @@ body {
 	padding: 12px;
     gap: 5px;
     position: absolute;
+	border-radius: 10px;
 }
 
 .cartao.selecionado {
@@ -166,4 +167,21 @@ body::-webkit-scrollbar-track{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #c08057;
+}
+
+.carta-virada {
+	
+}
+
+.carta-virada.mostrar-fundo-carta {
+	display: block;
+	background: url(/src/imagens/fundo-carta.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
 }
